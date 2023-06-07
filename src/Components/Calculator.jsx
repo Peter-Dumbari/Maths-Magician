@@ -1,78 +1,191 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
+import calculate from '../logic/calculate';
 
 function Calculator() {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operations: null,
+  });
+
+  const clickHandle = (e) => {
+    const result = e.target.name;
+    const realResult = calculate(state, result);
+    setState({ ...state, ...realResult });
+  };
+
+  const { total, next, operation } = state;
   return (
     <div className="calculator_container">
       <div className="calculator-body">
         <div className="display-screen">
-          <span>0</span>
+          <span>
+            {total}
+            {operation}
+            {next}
+          </span>
         </div>
         <div className="calculator-buttons">
           <div className="row">
-            <button type="button" className="btns">
+            <button
+              name="AC"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               AC
             </button>
-            <button type="button" className="btns">
+            <button
+              name="+/-"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               +/-
             </button>
-            <button type="button" className="btns">
+            <button
+              name="%"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               %
             </button>
-            <button type="button" className="btns coloured-btn">
-              /
+            <button
+              name="÷"
+              type="button"
+              className="btns coloured-btn"
+              onClick={clickHandle}
+            >
+              &divide;
             </button>
           </div>
           <div className="row">
-            <button type="button" className="btns">
+            <button
+              name="7"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               7
             </button>
-            <button type="button" className="btns">
+            <button
+              name="8"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               8
             </button>
-            <button type="button" className="btns">
+            <button
+              name="9"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               9
             </button>
-            <button type="button" className="btns coloured-btn">
-              X
+            <button
+              name="x"
+              type="button"
+              className="btns coloured-btn"
+              onClick={clickHandle}
+            >
+              x
             </button>
           </div>
           <div className="row">
-            <button type="button" className="btns">
+            <button
+              name="4"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               4
             </button>
-            <button type="button" className="btns">
+            <button
+              name="5"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               5
             </button>
-            <button type="button" className="btns">
+            <button
+              name="6"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               6
             </button>
-            <button type="button" className="btns coloured-btn">
+            <button
+              name="-"
+              type="button"
+              className="btns coloured-btn"
+              onClick={clickHandle}
+            >
               -
             </button>
           </div>
           <div className="row">
-            <button type="button" className="btns">
+            <button
+              name="1"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               1
             </button>
-            <button type="button" className="btns">
+            <button
+              name="2"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               2
             </button>
-            <button type="button" className="btns">
+            <button
+              name="3"
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               3
             </button>
-            <button type="button" className="btns coloured-btn">
+            <button
+              name="+"
+              type="button"
+              className="btns coloured-btn"
+              onClick={clickHandle}
+            >
               +
             </button>
           </div>
           <div className="row">
-            <button type="button" className="btns zero-btn">
+            <button
+              name="0"
+              type="button"
+              className="btns zero-btn"
+              onClick={clickHandle}
+            >
               0
             </button>
-            <button type="button" className="btns">
+            <button
+              name="."
+              type="button"
+              className="btns"
+              onClick={clickHandle}
+            >
               .
             </button>
-            <button type="button" className="btns coloured-btn">
+            <button
+              name="="
+              type="button"
+              className="btns coloured-btn"
+              onClick={clickHandle}
+            >
               =
             </button>
           </div>
