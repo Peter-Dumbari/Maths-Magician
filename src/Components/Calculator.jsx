@@ -3,17 +3,16 @@ import './Calculator.css';
 import calculate from '../logic/calculate';
 
 function Calculator() {
-  const [clickValue, setClickValue] = useState('');
   const [state, setState] = useState({
-    total: 0,
-    next: 0,
+    total: null,
+    next: null,
     operations: null,
   });
 
   const clickHandle = (e) => {
     const result = e.target.name;
-    setClickValue(result);
-    setState(calculate(state, clickValue));
+    const realResult = calculate(state, result);
+    setState({ ...state, ...realResult });
   };
 
   const { total, next, operation } = state;
@@ -54,7 +53,7 @@ function Calculator() {
               %
             </button>
             <button
-              name="/"
+              name="÷"
               type="button"
               className="btns coloured-btn"
               onClick={clickHandle}
