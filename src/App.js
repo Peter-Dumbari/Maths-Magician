@@ -1,5 +1,5 @@
-import Calculator from "./Components/Calculator";
-import Displayqoutes from "./Components/DisplayQuotes/Displayqoutes";
+import Calculator from './Components/Calculator';
+import Displayqoutes from './Components/DisplayQuotes/Displayqoutes';
 
 function App() {
   return (
