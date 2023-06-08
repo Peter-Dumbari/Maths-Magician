@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Calculator.css';
 import calculate from '../logic/calculate';
+import Displayqoutes from './DisplayQuotes/Displayqoutes';
 
 function Calculator() {
   const [state, setState] = useState({
@@ -190,6 +191,9 @@ function Calculator() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="display-qoute">
+        <Displayqoutes />
       </div>
     </div>
   );
