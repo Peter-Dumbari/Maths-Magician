@@ -1,8 +1,9 @@
 .qoute-container {
-  width: 100%;
   background-color: #000;
   text-align: center;
   padding: 3rem;
+  margin: 0;
+  height: 70vh;
 }
 
 .qoute {
