@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Peter-Dumbari/Maths-Magician/static/css/main.09d6561a.css",
+    "main.js": "/Peter-Dumbari/Maths-Magician/static/js/main.5bb094f7.js",
+    "static/js/787.89569701.chunk.js": "/Peter-Dumbari/Maths-Magician/static/js/787.89569701.chunk.js",
+    "index.html": "/Peter-Dumbari/Maths-Magician/index.html",
+    "main.09d6561a.css.map": "/Peter-Dumbari/Maths-Magician/static/css/main.09d6561a.css.map",
+    "main.5bb094f7.js.map": "/Peter-Dumbari/Maths-Magician/static/js/main.5bb094f7.js.map",
+    "787.89569701.chunk.js.map": "/Peter-Dumbari/Maths-Magician/static/js/787.89569701.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09d6561a.css",
+    "static/js/main.5bb094f7.js"
+  ]
+}
