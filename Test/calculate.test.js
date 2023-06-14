@@ -1,13 +1,13 @@
-import calculate from "../src/logic/calculate";
+import calculate from '../src/logic/calculate';
 
-test("handles AC button", () => {
+test('handles AC button', () => {
   const obj = {
-    total: "10",
-    next: "5",
-    operation: "+",
+    total: '10',
+    next: '5',
+    operation: '+',
   };
 
-  const result = calculate(obj, "AC");
+  const result = calculate(obj, 'AC');
 
   expect(result).toEqual({
     total: null,
@@ -16,39 +16,37 @@ test("handles AC button", () => {
   });
 });
 
-test("handles number buttons", () => {
+test('handles number buttons', () => {
   const obj = {
-    total: "10",
-    next: "5",
-    operation: "+",
+    total: '10',
+    next: '5',
+    operation: '+',
   };
 
-  const result = calculate(obj, "2");
+  const result = calculate(obj, '2');
 
   expect(result).toEqual({
-    total: "10",
-    next: "52",
-    operation: "+",
+    total: '10',
+    next: '52',
+    operation: '+',
   });
 
-
-  const result2 = calculate({ ...obj, next: "0" }, "0");
+  const result2 = calculate({ ...obj, next: '0' }, '0');
 
   expect(result2).toEqual({});
 });
 
-
-test("handles = button", () => {
+test('handles = button', () => {
   const obj = {
-    total: "10",
-    next: "5",
-    operation: "+",
+    total: '10',
+    next: '5',
+    operation: '+',
   };
 
-  const result = calculate(obj, "=");
+  const result = calculate(obj, '=');
 
   expect(result).toEqual({
-    total: "15",
+    total: '15',
     next: null,
     operation: null,
   });

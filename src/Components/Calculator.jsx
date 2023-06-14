@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import calculate from "../logic/calculate";
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+
 function Calculator() {
   const [state, setState] = useState({
     total: null,
@@ -34,28 +35,32 @@ function Calculator() {
                 name="AC"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 AC
               </button>
               <button
                 name="+/-"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 +/-
               </button>
               <button
                 name="%"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 %
               </button>
               <button
                 name="÷"
                 type="button"
                 className="btns coloured-btn"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 &divide;
               </button>
             </div>
@@ -64,28 +69,32 @@ function Calculator() {
                 name="7"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 7
               </button>
               <button
                 name="8"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 8
               </button>
               <button
                 name="9"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 9
               </button>
               <button
                 name="x"
                 type="button"
                 className="btns coloured-btn"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 x
               </button>
             </div>
@@ -94,28 +103,32 @@ function Calculator() {
                 name="4"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 4
               </button>
               <button
                 name="5"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 5
               </button>
               <button
                 name="6"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 6
               </button>
               <button
                 name="-"
                 type="button"
                 className="btns coloured-btn"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 -
               </button>
             </div>
@@ -124,28 +137,32 @@ function Calculator() {
                 name="1"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 1
               </button>
               <button
                 name="2"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 2
               </button>
               <button
                 name="3"
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 3
               </button>
               <button
                 name="+"
                 type="button"
                 className="btns coloured-btn"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 +
               </button>
             </div>
@@ -154,21 +171,24 @@ function Calculator() {
                 name="0"
                 type="button"
                 className="btns zero-btn"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 0
               </button>
               <button
                 name="."
                 type="button"
                 className="btns"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 .
               </button>
               <button
                 name="="
                 type="button"
                 className="btns coloured-btn"
-                onClick={clickHandle}>
+                onClick={clickHandle}
+              >
                 =
               </button>
             </div>
