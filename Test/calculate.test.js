@@ -1,5 +1,4 @@
 import calculate from "../src/logic/calculate";
-import operate from "../src/logic/operate";
 
 test("handles AC button", () => {
   const obj = {
@@ -24,7 +23,6 @@ test("handles number buttons", () => {
     operation: "+",
   };
 
-  // Example for number button '2'
   const result = calculate(obj, "2");
 
   expect(result).toEqual({
@@ -33,15 +31,13 @@ test("handles number buttons", () => {
     operation: "+",
   });
 
-  // Example for number button '0' when next is '0'
+
   const result2 = calculate({ ...obj, next: "0" }, "0");
 
   expect(result2).toEqual({});
 });
 
-// Add more test cases for other buttons...
 
-// Example for '=' button
 test("handles = button", () => {
   const obj = {
     total: "10",
