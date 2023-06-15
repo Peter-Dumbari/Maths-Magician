@@ -19,14 +19,12 @@ function Displayqoutes() {
 
       .then((res) => {
         setQuotes(res.data);
-        console.log(quotes);
         setLoading(false);
       })
       .catch((err) => {
-        console.log(err);
         setError(err);
       });
-  }, []);
+  }, [quotes]);
 
   return (
     <div className="qoute-container">
