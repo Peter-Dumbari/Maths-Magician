@@ -50,10 +50,9 @@
 - **User friendly**
 - **powerful interactive features**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+- [Live Demo Link](https://mathsmagician-zew8.onrender.com/calculator)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
@@ -118,7 +117,7 @@ You can deploy this project using:
 Example:
 
 ```sh
-    gh-pages
+    Render
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
