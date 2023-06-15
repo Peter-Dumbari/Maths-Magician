@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Displayqoutes.css';
 import axios from 'axios';
 
 function Displayqoutes() {
